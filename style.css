@@ -194,8 +194,6 @@ nav.sticky .menu-btn {
 }
 
 /* About Section Styling */
-/* Those Elements Where We Have Apply Same CSS,
- I'm Selecting Directly 'Section Tag' and 'Class'  */
 section {
   padding-top: 40px;
 }
@@ -253,6 +251,7 @@ section .title span::after {
   width: 400px;
   object-fit: cover;
   border-radius: 12px;
+  background-image: url('images/profile.jpg'); /* Ensure the path is correct */
 }
 
 .about-details .right {
