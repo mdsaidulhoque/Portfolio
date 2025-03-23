@@ -483,6 +483,12 @@ section .button button:hover {
   gap: 15px;
 }
 
+.contact .contact-form label {
+  font-size: 16px;
+  color: #0E2431;
+  margin-bottom: 5px;
+}
+
 .contact .contact-form input,
 .contact .contact-form textarea {
   width: 100%;
