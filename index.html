@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +8,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <link rel="preload" href="https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvjsGyN.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
-
 <body>
   <div class="scroll-button">
     <a href="#home"><i class="fas fa-arrow-up"></i></a>
@@ -156,10 +154,23 @@
   <section class="contact" id="contact">
     <div class="content">
       <div class="title"><span>Contact Me</span></div>
-      <div class="text">
+      <div class="contact-form">
+        <form id="contactForm">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-info">
         <p>Email: <a href="mailto:mdsaidulhoque951@gmail.com">mdsaidulhoque951@gmail.com</a></p>
         <p>GitHub: <a href="https://github.com/mdsaidulhoque">mdsaidulhoque</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/md-saidul-hoque-63bb57320">MD SAIDUL HOQUE</a></p>
+        <div class="social-media">
+          <a href="https://twitter.com/yourprofile"><i class="fab fa-twitter"></i></a>
+          <a href="https://facebook.com/yourprofile"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/yourprofile"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
     </div>
   </section>
