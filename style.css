@@ -409,6 +409,59 @@ section .button button:hover {
   color: #fff;
 }
 
+/* Testimonials Section */
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.testimonials .title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.testimonials-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.client-info {
+  margin-top: 15px;
+}
+
+.client-name {
+  display: block;
+  font-weight: bold;
+  color: #555;
+}
+
+.client-role {
+  display: block;
+  color: #999;
+  font-size: 0.9em;
+}
+
 /* Contact Me CSS */
 .contact {
   background: #F0F8FF;
