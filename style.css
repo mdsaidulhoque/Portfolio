@@ -295,66 +295,59 @@ section .button button:hover {
 /* My Skills CSS */
 .skills {
   background: #F0F8FF;
+  padding: 50px 0;
 }
 
 .skills .content {
   padding: 40px 0;
 }
 
+.skills .title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills .title span {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #333;
+}
+
 .skills .skills-details {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.skills-details .text {
-  width: 50%;
-}
-
-.skills-details p {
-  color: #0E2431;
-  text-align: justify;
-}
-
-.skills .skills-details .experience {
-  display: flex;
-  align-items: center;
-  margin: 0 10px;
-}
-
-.skills-details .experience .num {
-  color: #0E2431;
-  font-size: 80px;
-}
-
-.skills-details .experience .exp {
-  color: #0E2431;
-  margin-left: 20px;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 6px;
-}
-
-.skills-details .boxes {
-  width: 45%;
+.skills .logos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
 }
 
-.skills-details .box {
-  width: calc(100% / 2 - 20px);
-  margin: 20px 0;
+.skills .skill {
+  text-align: center;
+  max-width: 120px;
 }
 
-.skills-details .boxes .topic {
-  font-size: 20px;
-  color: #4070f4;
+.skills .skill-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
-.skills-details .boxes .per {
-  font-size: 60px;
-  color: #4070f4;
+.skills .skill-logo:hover {
+  transform: scale(1.1);
+}
+
+.skills .skill span {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #333;
 }
 
 /* My Services CSS */
