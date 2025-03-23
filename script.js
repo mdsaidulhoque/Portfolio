@@ -76,4 +76,36 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.removeChild(anchor); // Clean up the DOM
     });
   }
+
+  // Form Validation
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent the default form submission
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (name === '' || email === '' || message === '') {
+        alert('Please fill in all fields.');
+        return;
+      }
+
+      if (!validateEmail(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      // If form is valid, you can proceed with form submission (e.g., send the data to a server)
+      alert('Form submitted successfully!');
+      contactForm.reset(); // Reset the form
+    });
+  }
+
+  // Email Validation Function
+  function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  }
 });
